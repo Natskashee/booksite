@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
+</head>
+
+<style>
+    @import url('https://fonts.cdnfonts.com/css/metropolis-2');
+
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: beige;
+        font-family: "EB Garamond", serif;
+    }
+
+    .logo {
+        font-family: 'Metropolis', sans-serif;
+        font-weight: 800;
+    }
+
+    .title {
+        font-family: 'Metropolis', sans-serif;
+    }
+
+
+    nav ul li {
+        cursor: pointer;
+    }
+
+
+    section div img {
+        height: 200px;
+        width: 140px;
+
+    }
+
+    .animate-bounce {
+        rotate: 90deg;
+    }
+
+    @media (max-width:520px) {
+        nav ul li{
+            display: none;
+        }
+    }
+</style>
+
+
+<body>
+    <div class="flex justify-between items-center border-b-2 p-4 text-lg border-black">
+        <h1 class="text-2xl font-bold logo">BookLoop</h1>
+
+        <nav>
+            <ul class="flex gap-4 items-center">
+                <li>Acceuil</li>
+                <li>Livraison</li>
+                <li>Contact</li>
+                <li class="bg-black p-2 px-4 gap-2 flex items-center text-white rounded-full">Vos ventes
+
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg class="h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z"
+                            stroke="#FFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="p-4 flex flex-col justify-center">
+        <h1 class="text-2xl font-bold title">Nos livres de poche</h1>
+
+        <div class="flex justify-center gap-4 sm:gap-0 pt-4 flex-wrap sm:justify-between">
+            <span class="border-2 border-black p-4 cursor-pointer">
+                <img src="https://editions.flammarion.com/media/cache/couverture_large/flammarion_img/Couvertures/9782081394704.jpg"
+                    alt="">
+                <h2>L'alchimiste</h2>
+                <p>7590 FCFA</p>
+            </span>
+
+            <span class="border-2 border-black p-4 cursor-pointer">
+                <img src="https://www.bedetheque.com/media/Couvertures/Couv_68510.jpg" alt="">
+                <h2>Les trésors de Picsou</h2>
+                <p>4560 FCFA</p>
+            </span>
+
+            <span class="border-2 border-black p-4 cursor-pointer">
+                <img src="https://static.fnac-static.com/multimedia/Images/FR/NR/1b/97/75/7706395/1507-0/tsp20171222014331/Histoire-d-un-enfant-trouve.jpg"
+                    alt="">
+                <h2>Histoire d'un enfant trouvé</h2>
+                <p>5600 FCFA</p>
+            </span>
+        </div>
+    </section>
+
+
+    <svg class="h-24 mx-auto animate-bounce" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+            fill="#0F0F0F" />
+    </svg>
+
+    <footer class="border-t-2 border-black p-4 flex sm:justify-between justify-center gap-4 sm:gap-0 flex-wrap items-center">
+        <p class="w-[300px]">
+            Booktop est une association de passioné de livres qui se sont donnés de permettre un accès facile aux livres
+            au Gabon.
+        </p>
+
+        <form action="" class="flex gap-2 ">
+
+            <input type="text" class="bg-transparent border-black border-2 p-2 rounded-full"
+                placeholder="Entrez votre message...">
+
+            <button type="submit" class="bg-black p-2 px-4 gap-2 flex items-center text-white rounded-full"> Envoyer
+
+                <svg class="h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.3009 13.6949L20.102 3.89742M10.5795 14.1355L12.8019 18.5804C13.339 19.6545 13.6075 20.1916 13.9458 20.3356C14.2394 20.4606 14.575 20.4379 14.8492 20.2747C15.1651 20.0866 15.3591 19.5183 15.7472 18.3818L19.9463 6.08434C20.2845 5.09409 20.4535 4.59896 20.3378 4.27142C20.2371 3.98648 20.013 3.76234 19.7281 3.66167C19.4005 3.54595 18.9054 3.71502 17.9151 4.05315L5.61763 8.2523C4.48114 8.64037 3.91289 8.83441 3.72478 9.15032C3.56153 9.42447 3.53891 9.76007 3.66389 10.0536C3.80791 10.3919 4.34498 10.6605 5.41912 11.1975L9.86397 13.42C10.041 13.5085 10.1295 13.5527 10.2061 13.6118C10.2742 13.6643 10.3352 13.7253 10.3876 13.7933C10.4468 13.87 10.491 13.9585 10.5795 14.1355Z" stroke="#FFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+        </form>
+    </footer>
+</body>
+</html>
+
+<script>
+     alert("La page nécissite une connexion internet pour son affichage optimisé. Signé &#020!²")
+</script>
